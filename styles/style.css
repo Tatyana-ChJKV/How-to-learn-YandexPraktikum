@@ -14,6 +14,8 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
@@ -24,7 +26,6 @@
 }
 
 .logo_place_header {
-  display: block;
   width: 228px;
   height: 32px;
   position: absolute;
@@ -35,9 +36,8 @@
 
 .header__title {
   width: 730px;
-  display: flex;
-
   margin-left: 64px;
+  align-self: center;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -51,6 +51,11 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -69,6 +74,18 @@
   width: 568px;
   background-color: #2f80ed;
   z-index: -1;
+}
+
+.content {
+  display: block;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
